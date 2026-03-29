@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>苏州吴江叉车销售服务中心</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif}
+body{background:#f5f7fa;color:#333}
+.header{background:#1a5f99;color:#fff;padding:20px;text-align:center}
+.header h1{font-size:24px;margin-bottom:6px}
+.header p{font-size:15px;opacity:.9}
+.banner{width:100%;height:260px;background:#eee;display:flex;align-items:center;justify-content:center;color:#333;text-align:center}
+.container{max-width:900px;margin:0 auto;padding:25px 20px}
+.card{background:#fff;border-radius:12px;padding:25px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.card h3{font-size:20px;color:#1a5f99;margin-bottom:18px;border-left:5px solid #1a5f99;padding-left:12px}
+.info-item{display:flex;align-items:center;margin-bottom:14px;font-size:16px}
+.info-item .icon{margin-right:10px;font-size:18px}
+.phone{font-size:20px;font-weight:bold;color:#d93025}
+.brand-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.brand-tag{background:#e6f0ff;color:#1a5f99;padding:8px 14px;border-radius:20px;font-size:15px;font-weight:500}
+.product-list{padding-left:20px;line-height:1.9;font-size:16px}
+.address-item{margin-bottom:16px;line-height:1.6}
+.address-item strong{color:#1a5f99}
+.cat-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.cat-tab{padding:10px 16px;background:#e6f0ff;color:#1a5f99;border-radius:20px;cursor:pointer}
+.cat-tab.active{background:#1a5f99;color:#fff}
+.pro-items{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:15px}
+.pro-item{border:1px solid #eee;border-radius:10px;overflow:hidden}
+/* 图片样式优化：适配所有叉车图，不变形、居中显示 */
+.pro-img{width:100%;height:180px;object-fit:cover;display:block;}
+.pro-info{padding:14px}
+.pro-title{font-weight:bold;margin-bottom:6px}
+.pro-desc{font-size:14px;color:#666}
+.footer{text-align:center;padding:25px;background:#fff;font-size:14px;color:#666;border-top:1px solid #eee}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>苏州吴江叉车销售服务中心</h1>
+  <p>维修资质齐全 · 品牌最全 · 一站式叉车服务</p >
+</div>
+<div class="banner">
+  <div class="text">
+    <h2>龙工 · 杭叉 · 合力 · 江淮</h2>
+    <p>销售 · 租赁 · 维修 · 配件一体化</p >
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+    <h3>📞 联系电话</h3>
+    <div class="info-item">
+      <span class="icon">📞</span>
+      <span class="phone">18501557841</span>
+    </div>
+  </div>
+  <div class="card">
+    <h3>🏢 公司简介</h3>
+    <p>苏州吴江拥有维修资质、品牌最全的叉车销售服务中心，专业销售、租赁、维修各类叉车及仓储搬运设备，售后保障可靠。</p >
+  </div>
+  <div class="card">
+    <h3>🏅 代理品牌</h3>
+    <div class="brand-list">
+      <div class="brand-tag">龙工叉车</div>
+      <div class="brand-tag">杭州叉车</div>
+      <div class="brand-tag">合力叉车</div>
+      <div class="brand-tag">江淮叉车（苏州总代理）</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>🚜 主营产品</h3>
+    <ul class="product-list">
+      <li>全品类叉车（电动 / 燃油）</li>
+      <li>叉车租赁</li>
+      <li>堆高车、电动托盘车</li>
+      <li>电动堆高车、手动搬运车</li>
+      <li>手动液压车</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>📍 门店地址</h3>
+    <div class="address-item">
+      <strong>龙工叉车、杭州叉车门店：</strong><br>
+      苏州吴江区盛泽镇南麻织庄路
+    </div>
+    <div class="address-item">
+      <strong>江淮叉车5S展厅：</strong><br>
+      苏州吴江区平望镇
+    </div>
+  </div>
+  <div class="card">
+    <h3>🚛 产品分类展示</h3>
+    <div class="cat-tabs">
+      <div class="cat-tab active" data-cat="pallet">电动托盘</div>
+      <div class="cat-tab" data-cat="stack">电动堆高车</div>
+      <div class="cat-tab" data-cat="fork">平衡重式叉车</div>
+    </div>
+    <div class="pro-items">
+      <!-- 电动托盘类：1-5号图 -->
+      <div class="pro-item" data-type="pallet">
+        < img class="pro-img" src="1.jpg" alt="1.5吨电动搬运车（锂电）">
+        <div class="pro-info">
+          <div class="pro-title">1.5吨电动搬运车（锂电）</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="pallet">
+        < img class="pro-img" src="2.jpg" alt="3吨电动托盘车">
+        <div class="pro-info">
+          <div class="pro-title">3吨电动托盘车</div>
+          <div class="pro-desc">原厂铅酸电池，可选配锂电</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="pallet">
+        < img class="pro-img" src="3.jpg" alt="2-3吨电动搬运车">
+        <div class="pro-info">
+          <div class="pro-title">2-3吨电动搬运车</div>
+          <div class="pro-desc">原厂铅酸电池组</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="pallet">
+        < img class="pro-img" src="4.jpg" alt="3吨越野款搬运车">
+        <div class="pro-info">
+          <div class="pro-title">3吨越野款搬运车</div>
+          <div class="pro-desc">原厂铅酸电池，可选配锂电</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="pallet">
+        < img class="pro-img" src="5.jpg" alt="5吨越野搬运车">
+        <div class="pro-info">
+          <div class="pro-title">5吨越野搬运车</div>
+          <div class="pro-desc">原厂铅酸电池，可选配锂电</div>
+        </div>
+      </div>
+      <!-- 电动堆高车类：6-7号图 -->
+      <div class="pro-item" data-type="stack">
+        < img class="pro-img" src="6.jpg" alt="1.5吨电动堆高车">
+        <div class="pro-info">
+          <div class="pro-title">1.5吨电动堆高车</div>
+          <div class="pro-desc">原厂铅酸电池，可选配锂电</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="stack">
+        < img class="pro-img" src="7.jpg" alt="2吨电动堆高车">
+        <div class="pro-info">
+          <div class="pro-title">2吨电动堆高车</div>
+          <div class="pro-desc">原厂铅酸电池，可选配锂电</div>
+        </div>
+      </div>
+      <!-- 平衡重式叉车类：8-10号图 -->
+      <div class="pro-item" data-type="fork">
+        < img class="pro-img" src="8.jpg" alt="燃油叉车">
+        <div class="pro-info">
+          <div class="pro-title">燃油叉车</div>
+          <div class="pro-desc">可定制门架高度、吨位</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="fork">
+        < img class="pro-img" src="9.jpg" alt="电动叉车">
+        <div class="pro-info">
+          <div class="pro-title">电动叉车</div>
+          <div class="pro-desc">可定制门架高度、吨位</div>
+        </div>
+      </div>
+      <div class="pro-item" data-type="fork">
+        < img class="pro-img" src="10.jpg" alt="三支点电动叉车">
+        <div class="pro-info">
+          <div class="pro-title">三支点电动叉车</div>
+          <div class="pro-desc">高配车型，适合小空间使用</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  苏州吴江叉车销售服务中心 © 版权所有
+</div>
+<script>
+const tabs = document.querySelectorAll('.cat-tab');
+const items = document.querySelectorAll('.pro-item');
+tabs.forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    tabs.forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const c = tab.dataset.cat;
+    items.forEach(i=>{
+      if(i.dataset.type === c) i.style.display='block';
+      else i.style.display='none';
+    })
+  })
+})
+</script>
+</body>
+</html>
