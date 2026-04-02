@@ -1,0 +1,8 @@
+User-agent: *
+# 允许搜狗蜘蛛抓取验证文件，验证通过后可删除这行
+Allow: /sogousiteverification.txt
+Allow: /hangcha/
+Allow: /jianghuai/
+Allow: /longong/
+# 禁止抓取主站根目录
+Disallow: /
