@@ -1,3 +1,0 @@
-# 强制去掉末尾斜杠，适配搜狗验证
-plugins:
-  - jekyll-redirect-from
